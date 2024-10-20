@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Academy</title>
+    <!-- Linking the icons provider stylesheet and Bootstrap CSS file -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/advance.css" />
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+    <div class="wrapper">
+      <aside id="sidebar">
+        <!-- Sidebar header -->
+        <div class="d-flex">
+          <button class="toggle-btn" type="button">
+            <i class="lni lni-code"></i>
+          </button>
+          <div class="sidebar-logo">
+            <span>CODE ACADEMY</span>
+          </div>
+        </div>
+        <!-- Search bar -->
+        <div class="search">
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search..."
+              aria-label="Search"
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+        <!-- Sidebar navigation -->
+        <ul class="sidebar-nav">
+          <li class="sidebar-item">
+            <a href="coding.html#coding-section" class="sidebar-link">
+              <i class="lni lni-code-alt"></i>
+              <span>Coding</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="lni lni-calculator"></i>
+              <span>Maths</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="practice.html" class="sidebar-link">
+              <i class="lni lni-plug"></i>
+              <span>Practice</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="tutor.html" class="sidebar-link">
+              <i class="bx bxs-group"></i>
+              <span>Find Tutor</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="login.html" class="sidebar-link">
+              <i class="lni lni-exit"></i>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- Main content -->
+      <div class="container">
+        <div class="questions">
+            <h1 class="text-center">Code Academy Quiz</h1>
+            <div class="quiz">
+                <!-- Quiz questions and answers -->
+                <h2 id="question" class="mb-4">Questions goes here Here</h2>
+                <div id="answer-buttons" class="mb-4">
+                    <button class="btn btn-primary d-block mb-2">Answer 1</button>
+                    <button class="btn btn-primary d-block mb-2">Answer 2</button>
+                    <button class="btn btn-primary d-block mb-2">Answer 3</button>
+                    <button class="btn btn-primary d-block mb-2">Answer 4</button>
+                </div>
+                <!-- Buttons for navigation -->
+                <button id="next-btn" class="btn btn-success mr-2">Next Question</button>
+                <button id="tryAgain-btn" class="btn btn-danger mr-2">Try Again</button>
+                <button id="back-btn" class="btn btn-secondary">Back to Option</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Including Bootstrap JS  and java script file-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/advance.js"></script>
+  </body>
+</html>

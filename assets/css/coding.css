@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Resetting box model for ::before and ::after pseudo-elements */
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Removing underline from links */
+a {
+    text-decoration: none;
+}
+
+/* Removing default list styling */
+li {
+    list-style: none;
+}
+
+/* Styling for heading */
+h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* Body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #dce6f3;
+}
+
+/* Sidebar wrapper */
+.wrapper {
+    display: flex;
+}
+
+/* Main content */
+.main {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    background-color: #dce6f3;
+}
+
+/* Sidebar styles */
+#sidebar {
+    width: 100px;
+    height: auto;
+    min-width: 70px;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+    background-color: #0e2238;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Expanded sidebar styles */
+#sidebar.expand {
+    width: 260px;
+    min-width: 260px;
+}
+
+/* Toggle button styles */
+.toggle-btn {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    padding: 1rem 1.5rem;
+}
+
+.toggle-btn i {
+    font-size: 1.5rem;
+    color: #FFF;
+}
+
+/* Sidebar logo styles */
+.sidebar-logo {
+    margin: auto 0;
+}
+
+.sidebar-logo span {
+    color: #FFF;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+/* Hide sidebar elements when collapsed */
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link span,
+#sidebar:not(.expand) .search {
+    display: none;
+}
+
+/* Sidebar navigation styles */
+.sidebar-nav {
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
+
+/* Sidebar link styles */
+a.sidebar-link {
+    padding: .625rem 1.625rem;
+    color: #FFF;
+    display: block;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-link i {
+    font-size: 1.1rem;
+    margin-right: .75rem;
+}
+
+/* Hover effect for sidebar links */
+a.sidebar-link:hover {
+    background-color: rgba(255, 255, 255, .075);
+    border-left: 3px solid #00d0ff;
+}
+
+.sidebar-item {
+    position: relative;
+}
+
+
+
+/* Image fluid styling */
+.img-fluid {
+    width: 2000px; 
+    min-height: 300px; 
+    max-height: 500px; 
+    border: 2px solid #dbdbdb; 
+    border-radius: 10px; 
+}

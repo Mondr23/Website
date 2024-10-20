@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Resetting box model for ::before and ::after pseudo-elements */
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Removing underline from links */
+a {
+    text-decoration: none;
+}
+
+
+/* Removing default list styling */
+li {
+    list-style: none;
+}
+
+/* Styling for heading */
+h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* Body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #dce6f3;
+
+}
+
+/* Sidebar wrapper */
+.wrapper {
+    display: flex;
+}
+
+/* Main content */
+.main {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    background-color: #dce6f3;
+}
+
+/* Sidebar styles */
+#sidebar {
+    width: 100px;
+    height: 1000px;
+    min-width: 70px;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+    background-color: #0e2238;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Expanded sidebar styles */
+#sidebar.expand {
+    width: 260px;
+    min-width: 260px;
+}
+
+/* Toggle button styles */
+.toggle-btn {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    padding: 1rem 1.5rem;
+}
+
+.toggle-btn i {
+    font-size: 1.5rem;
+    color: #FFF;
+}
+
+
+/* Sidebar logo styles */
+.sidebar-logo {
+    margin: auto 0;
+}
+
+.sidebar-logo span {
+    color: #FFF;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+/* Hide sidebar elements when collapsed */
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link span,
+#sidebar:not(.expand) .search {
+    display: none;
+}
+
+/* Sidebar navigation styles */
+.sidebar-nav {
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
+
+/* Sidebar link styles */
+a.sidebar-link {
+    padding: .625rem 1.625rem;
+    color: #FFF;
+    display: block;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-link i {
+    font-size: 1.1rem;
+    margin-right: .75rem;
+}
+
+/* Hover effect for sidebar links */
+a.sidebar-link:hover {
+    background-color: rgba(255, 255, 255, .075);
+    border-left: 3px solid #00d0ff;
+}
+
+
+/* Main content container */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #001e4d;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles for quiz section */
+.questions {
+    margin-bottom: 20px;
+}
+
+.questions h1 {
+    font-size: 25px;
+    color: #0e2238;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Styles for answer buttons */
+#answer-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    color: #222;
+    background: #FFF;
+    font-weight: 500;
+    width: 100%;
+    border: 2px solid #222;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for buttons */
+.btn:hover:not([disabled]) {
+    background-color: #e0e0e0;
+}
+
+/* Disabled button styles */
+.btn:disabled {
+    cursor: not-allowed;
+}
+
+/* Navigation buttons styles */
+#next-btn,
+#tryAgain-btn,
+#back-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Styles for correct answer */
+.correct {
+    background: #9aeabc;
+}
+
+/* Styles for incorrect answer */
+.incorrect {
+    background: #ff9393;
+}
+
+

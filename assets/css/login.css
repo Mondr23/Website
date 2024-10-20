@@ -1,0 +1,116 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(7, 7, 61, 0.8), rgba(18, 18, 75, 0.8)), url("");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Form Box */
+.form-box {
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center; 
+}
+
+.form-box h1 {
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #002d6b;
+    position: relative;
+}
+
+.form-box h1::after {
+    content: '';
+    width: 40px;
+    height: 5px;
+    border-radius: 3px;
+    background: #3c00a0;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* Input Field */
+.input-field {
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-field i {
+    margin-left: 15px;
+    color: #999;
+}
+
+/* Form Paragraph */
+form p {
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a {
+    text-decoration: none;
+    color: #999;
+}
+
+/* Button Field */
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Button Styles */
+.btn {
+    background: #002d6b;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px; /* Add padding */
+    transition: background 0.3s ease;
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    background: #004aad; /* Change background color on hover */
+}
+
+/* Additional Styles for Input Group */
+.input-group {
+    height: 240px;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Academy</title>
+    <!-- Linking the Boxicons stylesheet and Bootstrap CSS file -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/pyhton.css"> <!-- Custom CSS -->
+</head>
+<body>
+<div class="wrapper">
+    <!-- Sidebar -->
+    <aside id="sidebar">
+        <div class="d-flex">
+            <!-- Sidebar toggle button -->
+            <button class="toggle-btn" type="button">
+                <i class="lni lni-code"></i>
+            </button>
+            <!-- Sidebar logo -->
+            <div class="sidebar-logo">
+                <span>CODE ACADEMY</span>
+            </div>
+        </div>
+        <!-- Search input -->
+        <div class="search">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="searchInput" placeholder="Search..." aria-label="Search" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+            </div>
+        </div>
+        <!-- Sidebar navigation links -->
+        <ul class="sidebar-nav" id="sidebarNav">
+            <li class="sidebar-item">
+                <a href="coding.html" class="sidebar-link">
+                    <i class="lni lni-code-alt"></i>
+                    <span>Coding</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                    <i class="lni lni-calculator"></i>
+                    <span>Maths</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="practice.html" class="sidebar-link">
+                    <i class="lni lni-plug"></i>
+                    <span>Practice</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="tutor.html" class="sidebar-link">
+                    <i class='bx bxs-group'></i>
+                    <span>Find Tutor</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="login.html" class="sidebar-link">
+                    <i class="lni lni-exit"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <!-- Main content -->
+    <div class="main">
+      <!-- Introduction section -->
+      <section class="intro_page">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <img
+                src="assets/imgs/pyhton2.webp"
+                class="img-fluid"
+                alt="home page"
+              />
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                  <h1 class="my-5">Start Learning Pyhton</h1>
+                  <p>
+                    Python is a versatile and powerful programming language known for its simplicity and readability.
+                     Created by Guido van Rossum and first released in 1991,
+                      Python has gained immense popularity for its ease of learning and wide range of applications!
+                  </p>
+                  <p><a href="#lessons">Start Learning</a></p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <!-- Lessons section -->
+      <hr class="my-5"> 
+      <section id="lessons">
+        <h1 class="my-5 text-center">Lessons</h1>
+        <div class="containers">
+          <!-- Individual lesson containers -->
+          <div class="container1">
+            <p><a href="https://www.youtube.com/watch?v=XKHEtdqhLK8&t=357s">Lesson 1:</a>
+              Variables</p>
+          </div>
+      
+          <div class="container2">
+            <p><a href="https://www.youtube.com/watch?v=XKHEtdqhLK8&t=1814s">Lesson 2:</a>
+            User Input</p>
+          </div>
+      
+          <div class="container3">
+            <p><a href="https://www.youtube.com/watch?v=XKHEtdqhLK8&t=3112s">Lesson 3:</a>
+            If Statements</p>
+          </div>
+      
+          <div class="container4">
+            <p><a href="https://www.youtube.com/watch?v=XKHEtdqhLK8&t=3843s">Lesson 4:</a>
+            While&For Loop</p>
+          </div>
+      
+          <div class="container5">
+            <p><a href="https://www.youtube.com/watch?v=XKHEtdqhLK8&t=6803s">Lesson 5:</a>
+            Functions</p>
+          </div>
+        </div>
+      </section>
+    </div>
+</div>
+    
+<!-- Including Bootstrap JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

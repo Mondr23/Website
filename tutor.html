@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Academy</title>
+    <!-- Linking the Boxicons stylesheet and Bootstrap CSS file -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/tutor.css" />
+</head>
+
+<body>
+    <!-- Sidebar and main content wrapper -->
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="d-flex">
+                <!-- Sidebar toggle button -->
+                <button class="toggle-btn" type="button">
+                    <i class="lni lni-code"></i>
+                </button>
+                <!-- Sidebar logo -->
+                <div class="sidebar-logo">
+                    <span>CODE ACADEMY</span>
+                </div>
+            </div>
+            <!-- Search input -->
+            <div class="search">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search..." aria-label="Search"
+                        aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                </div>
+            </div>
+            <!-- Sidebar navigation links -->
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="coding.html#coding-section" class="sidebar-link">
+                        <i class="lni lni-code-alt"></i>
+                        <span>Coding</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-calculator"></i>
+                        <span>Maths</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="practice.html" class="sidebar-link">
+                        <i class="lni lni-plug"></i>
+                        <span>Practice</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="tutor.html" class="sidebar-link">
+                        <i class='bx bxs-group'></i>
+                        <span>Find Tutor</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="login.html" class="sidebar-link">
+                        <i class="lni lni-exit"></i>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- Main content -->
+        <div class="main">
+            <!-- Banner image -->
+            <div class="row">
+                <div class="col-12">
+                    <img src="assets/imgs/tutorm.png" class="img-fluid" alt="home page" />
+                </div>
+            </div>
+            <!-- Introduction to tutors -->
+            <div class="text-center">
+                <h2>Tutors</h2>
+                <p class="lead text-muted">
+                    Your journey to become a coder starts here
+                </p>
+                <p> <a href="#find-tutor">Find your best tutor now</a></p>
+            </div>
+            <!-- Tutors section -->
+            <div class="container-lg">
+                <div class="row justify-content-center">
+                    <div class="col-9 col-lg-4 my-5" id="Leeds">
+                        <div class="card border-primary border-1">
+                            <img src="assets/imgs/tutor.jpg" class="card-img-top" alt="HTML">
+                            <div class="card-body text-center py-4">
+                                <h4 class="card-title">Amy</h4>
+                                <div class="col-4">
+                                    <a href="#" class="btn btn-outline-primary btn-lg mt-3">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9 col-lg-4 my-5" id="London">
+                        <div class="card border-primary border-1">
+                            <img src="assets/imgs/tutor2.webp" class="card-img-top" alt="HTML">
+                            <div class="card-body text-center py-4">
+                                <h4 class="card-title">Aisha</h4>
+                                <div class="col-4">
+                                    <a href="#" class="btn btn-outline-primary btn-lg mt-3">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9 col-lg-4 my-5" id="Manchester">
+                        <div class="card border-primary border-1">
+                            <img src="assets/imgs/tutor4.jpg" class="card-img-top" alt="HTML">
+                            <div class="card-body text-center py-4">
+                                <h4 class="card-title">Ahmed</h4>
+                                <div class="col-4">
+                                    <a href="#" class="btn btn-outline-primary btn-lg mt-3">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5">
+            <!-- Section for finding a tutor -->
+            <section id="find-tutor">
+                <form id="locationForm">
+                    <div class="locationForm">
+                        <div class="text-center">
+                            <h2>Find the nearest tutor to you</h2>
+                        </div>
+                        <!-- Location inputs -->
+                        <span>City</span>
+                        <input type="text" id="cityInput" required="required">
+                        <span>Country</span>
+                        <input type="text" id="countryInput" required="required">
+                        <!-- Buttons for finding location and tutors -->
+                        <p><button class="btn btn-outline-secondary" id="findLocationBtn">Find my Location</button></p>
+                        <button class="btn btn-outline-secondary" type="submit" id="submitLocation">Find Tutors</button>
+                    </div>
+                </form>
+                <!-- Popup for displaying error message -->
+                <div class="popup-center">
+                    <div class="title">
+                        Sorry
+                    </div>
+                    <div class="desc">
+                        We could not find any tutors in <span id="errorMessage"></span>!
+                    </div>
+                    <div class="dismiss-btn">
+                        <button type="button" class="btn-sm">OK</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Including Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/tutor.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Academy</title>
+    <!-- Linking the Lineicons and Boxicons stylesheets, and Bootstrap CSS file -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/coding.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside id="sidebar">
+        <div class="d-flex">
+          <!-- Toggle button for sidebar -->
+          <button class="toggle-btn" type="button">
+            <i class="lni lni-code"></i>
+          </button>
+          <!-- Sidebar logo -->
+          <div class="sidebar-logo">
+            <span>CODE ACADEMY</span>
+          </div>
+        </div>
+        <!-- Search bar -->
+        <div class="search">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+          </div>
+        </div>
+        <!-- Sidebar navigation -->
+        <ul class="sidebar-nav">
+          <li class="sidebar-item">
+            <a href="#coding" class="sidebar-link">
+              <i class="lni lni-code-alt"></i>
+              <span>Coding</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="lni lni-calculator"></i>
+              <span>Maths</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="practice.html" class="sidebar-link">
+              <i class="lni lni-plug"></i>
+              <span>Practice</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="tutor.html" class="sidebar-link">
+              <i class='bx bxs-group'></i>
+              <span>Find Tutor</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="login.html" class="sidebar-link">
+              <i class="lni lni-exit"></i>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div class="main">
+        <section class="home_page">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <!-- Image for homepage -->
+                <img
+                  src="assets/imgs/codeAcademy.jpg"
+                  class="img-fluid"
+                  alt="home page"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 text-center">
+                <!-- Heading and paragraph for homepage -->
+                <h1 class="my-5">Welcome to Code Academy</h1>
+                <p>
+                  At Code Academy, we believe that learning to code is not just about mastering programming languages; it's about unlocking limitless possibilities and shaping the future. Whether you're a complete beginner or an experienced coder looking to enhance your skills, we're here to guide you on your journey to success.
+
+                  Our comprehensive range of courses covers everything from the fundamentals of HTML and CSS to advanced topics in Python, JavaScript, and beyond. With expertly crafted lessons, hands-on projects, and real-world applications, you'll gain the knowledge and confidence to tackle any coding challenge with ease.
+
+                  But we're more than just a coding platform. Our commitment to excellence extends beyond the screen, fostering a vibrant community of learners and mentors. Connect with like-minded individuals, share insights, and collaborate on projects to accelerate your learning and expand your horizons.
+
+                  Whether you're pursuing a career in software development, exploring the latest technologies, or simply fulfilling your curiosity, Code Academy is your trusted companion every step of the way. Start your coding journey today and unleash your potential with us.
+
+                  Let's code the future together!
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Horizontal rule for homepage separation -->
+          <hr class="my-5">
+        </section>
+        <section id="coding">
+          <div class="text-center">
+            <!-- Section title and description -->
+            <h2>Courses</h2>
+            <p class="lead text-muted">
+              A wide range of courses to start your coding journey
+            </p>
+          </div>
+          <div class="container-lg">
+            <div class="row justify-content-center">
+              <div class="col-9 col-lg-4 my-5">
+                <!-- Card for CSS course -->
+                <div class="card border-primary border-1">
+                  <div class="card-header text-center text-primary">
+                    Codeacademy
+                  </div>
+                  <img src="assets/imgs/css.jpg" class="card-img-top" alt="CSS">
+                  <div class="card-body text-center py-4">
+                    <h4 class="card-title">CSS</h4>
+                    <a href="#" class="btn btn-outline-primary btn-lg mt-3">Start Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-9 col-lg-4 my-5">
+                <!-- Card for HTML course -->
+                <div class="card border-primary border-1">
+                  <div class="card-header text-center text-primary">
+                    Codeacademy
+                  </div>
+                  <img src="assets/imgs/htmlCopy.jpg" class="card-img-top" alt="HTML">
+                  <div class="card-body text-center py-4">
+                    <h4 class="card-title">HTML</h4>
+                    <a href="#" class="btn btn-outline-primary btn-lg mt-3">Start Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-9 col-lg-4 my-5">
+                <!-- Card for Python course -->
+                <div class="card border-primary border-1">
+                  <div class="card-header text-center text-primary">
+                    Codeacademy
+                  </div>
+                  <img src="assets/imgs/Python.png" class="card-img-top" alt="Python">
+                  <div class="card-body text-center py-4">
+                    <h4 class="card-title">Python</h4>
+                    <a href="pyhton.html" class="btn btn-outline-primary btn-lg mt-3">Start Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Including Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/coding.js"></script>
+
+    <!---AI chatbot -->
+   <script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "XLwQjCgY8YKOIgTnIZRC8",
+    domain: "www.chatbase.co"
+    }</script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="XLwQjCgY8YKOIgTnIZRC8"
+    domain="www.chatbase.co"
+    defer></script>
+  </script>
+    
+  </body>
+</html>
